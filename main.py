@@ -3,6 +3,7 @@ from tkinter import *
 from tkinter import ttk
 from tkinter import filedialog
 
+
 import os
 
 import data_management
@@ -64,10 +65,6 @@ def run_loading_screen(main_root, display_duration_ms=2500):
             main_root.deiconify()
     
     animate_progress()
-    
-    
-
-    
 
 
 class FlatDropDown:

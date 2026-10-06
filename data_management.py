@@ -32,7 +32,7 @@ def parse_and_average_json():
     Aggregates stats across all occurrences to calculate global averages per team.
     """
     try:
-        with open('current.json', 'r') as file:
+        with open('none.json', 'r') as file:
             raw_data = json.load(file)
     except FileNotFoundError:
         # Stand-in example layout matching your precise format definition
