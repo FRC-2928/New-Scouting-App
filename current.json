@@ -1,11 +1,582 @@
 [
-    [0, 
-    {"team1ID": 0, "team1_alliance": "blue", "team1_scoring_In_Auto": 0, "team1_quality_of_auto":0, "team1_quality_of_scoring": 0, "team1_overall_scoring": 0, "team1_quality_of_defense": 0},
-    {"team2ID": 0, "team2_alliance": "blue", "team2_scoring_In_Auto": 0, "team2_quality_of_auto":0, "team2_quality_of_scoring": 0, "team2_overall_scoring": 0, "team2_quality_of_defense": 0},
-    {"team3ID": 0, "team3_alliance": "blue", "team3_scoring_In_Auto": 0, "team3_quality_of_auto":0, "team3_quality_of_scoring": 0, "team3_overall_scoring": 0, "team3_quality_of_defense": 0},
-    {"team4ID": 0, "team4_alliance": "blue", "team4_scoring_In_Auto": 0, "team4_quality_of_auto":0, "team4_quality_of_scoring": 0, "team4_overall_scoring": 0, "team4_quality_of_defense": 0},
-    {"team5ID": 0, "team5_alliance": "blue", "team5_scoring_In_Auto": 0, "team5_quality_of_auto":0, "team5_quality_of_scoring": 0, "team5_overall_scoring": 0, "team5_quality_of_defense": 0},
-    {"team6ID": 0, "team6_alliance": "blue", "team6_scoring_In_Auto": 0, "team6_quality_of_auto":0, "team6_quality_of_scoring": 0, "team6_overall_scoring": 0, "team6_quality_of_defense": 0},
-    "practice" 
+    [
+        1,
+        {
+            "team1ID": 254,
+            "team1_alliance": "blue",
+            "team1_scoring_In_Auto": 6,
+            "team1_quality_of_auto": 5,
+            "team1_quality_of_scoring": 5,
+            "team1_overall_scoring": 15,
+            "team1_quality_of_defense": 2
+        },
+        {
+            "team2ID": 1323,
+            "team2_alliance": "blue",
+            "team2_scoring_In_Auto": 5,
+            "team2_quality_of_auto": 4,
+            "team2_quality_of_scoring": 5,
+            "team2_overall_scoring": 14,
+            "team2_quality_of_defense": 1
+        },
+        {
+            "team3ID": 1678,
+            "team3_alliance": "blue",
+            "team3_scoring_In_Auto": 4,
+            "team3_quality_of_auto": 5,
+            "team3_quality_of_scoring": 4,
+            "team3_overall_scoring": 11,
+            "team3_quality_of_defense": 3
+        },
+        {
+            "team4ID": 118,
+            "team4_alliance": "red",
+            "team4_scoring_In_Auto": 3,
+            "team4_quality_of_auto": 3,
+            "team4_quality_of_scoring": 4,
+            "team4_overall_scoring": 9,
+            "team4_quality_of_defense": 4
+        },
+        {
+            "team5ID": 148,
+            "team5_alliance": "red",
+            "team5_scoring_In_Auto": 4,
+            "team5_quality_of_auto": 4,
+            "team5_quality_of_scoring": 3,
+            "team5_overall_scoring": 10,
+            "team5_quality_of_defense": 2
+        },
+        {
+            "team6ID": 971,
+            "team6_alliance": "red",
+            "team6_scoring_In_Auto": 5,
+            "team6_quality_of_auto": 5,
+            "team6_quality_of_scoring": 4,
+            "team6_overall_scoring": 12,
+            "team6_quality_of_defense": 5
+        },
+        "qualification"
+    ],
+    [
+        2,
+        {
+            "team1ID": 2910,
+            "team1_alliance": "blue",
+            "team1_scoring_In_Auto": 5,
+            "team1_quality_of_auto": 4,
+            "team1_quality_of_scoring": 4,
+            "team1_overall_scoring": 13,
+            "team1_quality_of_defense": 2
+        },
+        {
+            "team2ID": 4414,
+            "team2_alliance": "blue",
+            "team2_scoring_In_Auto": 6,
+            "team2_quality_of_auto": 5,
+            "team2_quality_of_scoring": 5,
+            "team2_overall_scoring": 16,
+            "team2_quality_of_defense": 1
+        },
+        {
+            "team3ID": 118,
+            "team3_alliance": "blue",
+            "team3_scoring_In_Auto": 2,
+            "team3_quality_of_auto": 3,
+            "team3_quality_of_scoring": 3,
+            "team3_overall_scoring": 8,
+            "team3_quality_of_defense": 4
+        },
+        {
+            "team4ID": 254,
+            "team4_alliance": "red",
+            "team4_scoring_In_Auto": 4,
+            "team4_quality_of_auto": 5,
+            "team4_quality_of_scoring": 5,
+            "team4_overall_scoring": 14,
+            "team4_quality_of_defense": 3
+        },
+        {
+            "team5ID": 1678,
+            "team5_alliance": "red",
+            "team5_scoring_In_Auto": 5,
+            "team5_quality_of_auto": 4,
+            "team5_quality_of_scoring": 4,
+            "team5_overall_scoring": 12,
+            "team5_quality_of_defense": 2
+        },
+        {
+            "team6ID": 1323,
+            "team6_alliance": "red",
+            "team6_scoring_In_Auto": 6,
+            "team6_quality_of_auto": 5,
+            "team6_quality_of_scoring": 5,
+            "team6_overall_scoring": 15,
+            "team6_quality_of_defense": 1
+        },
+        "qualification"
+    ],
+    [
+        3,
+        {
+            "team1ID": 148,
+            "team1_alliance": "blue",
+            "team1_scoring_In_Auto": 3,
+            "team1_quality_of_auto": 4,
+            "team1_quality_of_scoring": 4,
+            "team1_overall_scoring": 11,
+            "team1_quality_of_defense": 3
+        },
+        {
+            "team2ID": 971,
+            "team2_alliance": "blue",
+            "team2_scoring_In_Auto": 4,
+            "team2_quality_of_auto": 4,
+            "team2_quality_of_scoring": 5,
+            "team2_overall_scoring": 13,
+            "team2_quality_of_defense": 4
+        },
+        {
+            "team3ID": 2910,
+            "team3_alliance": "blue",
+            "team3_scoring_In_Auto": 6,
+            "team3_quality_of_auto": 5,
+            "team3_quality_of_scoring": 4,
+            "team3_overall_scoring": 14,
+            "team3_quality_of_defense": 2
+        },
+        {
+            "team4ID": 4414,
+            "team4_alliance": "red",
+            "team4_scoring_In_Auto": 5,
+            "team4_quality_of_auto": 5,
+            "team4_quality_of_scoring": 5,
+            "team4_overall_scoring": 15,
+            "team4_quality_of_defense": 1
+        },
+        {
+            "team5ID": 254,
+            "team5_alliance": "red",
+            "team5_scoring_In_Auto": 5,
+            "team5_quality_of_auto": 4,
+            "team5_quality_of_scoring": 4,
+            "team5_overall_scoring": 13,
+            "team5_quality_of_defense": 3
+        },
+        {
+            "team6ID": 118,
+            "team6_alliance": "red",
+            "team6_scoring_In_Auto": 3,
+            "team6_quality_of_auto": 3,
+            "team6_quality_of_scoring": 4,
+            "team6_overall_scoring": 9,
+            "team6_quality_of_defense": 5
+        },
+        "practice"
+    ],
+    [
+        4,
+        {
+            "team1ID": 1678,
+            "team1_alliance": "blue",
+            "team1_scoring_In_Auto": 5,
+            "team1_quality_of_auto": 5,
+            "team1_quality_of_scoring": 5,
+            "team1_overall_scoring": 14,
+            "team1_quality_of_defense": 2
+        },
+        {
+            "team2ID": 254,
+            "team2_alliance": "blue",
+            "team2_scoring_In_Auto": 6,
+            "team2_quality_of_auto": 5,
+            "team2_quality_of_scoring": 5,
+            "team2_overall_scoring": 16,
+            "team2_quality_of_defense": 1
+        },
+        {
+            "team3ID": 1323,
+            "team3_alliance": "blue",
+            "team3_scoring_In_Auto": 4,
+            "team3_quality_of_auto": 4,
+            "team3_quality_of_scoring": 4,
+            "team3_overall_scoring": 12,
+            "team3_quality_of_defense": 2
+        },
+        {
+            "team4ID": 148,
+            "team4_alliance": "red",
+            "team4_scoring_In_Auto": 2,
+            "team4_quality_of_auto": 3,
+            "team4_quality_of_scoring": 3,
+            "team4_overall_scoring": 8,
+            "team4_quality_of_defense": 4
+        },
+        {
+            "team5ID": 971,
+            "team5_alliance": "red",
+            "team5_scoring_In_Auto": 5,
+            "team5_quality_of_auto": 4,
+            "team5_quality_of_scoring": 4,
+            "team5_overall_scoring": 11,
+            "team5_quality_of_defense": 5
+        },
+        {
+            "team6ID": 2910,
+            "team6_alliance": "red",
+            "team6_scoring_In_Auto": 4,
+            "team6_quality_of_auto": 5,
+            "team6_quality_of_scoring": 4,
+            "team6_overall_scoring": 12,
+            "team6_quality_of_defense": 3
+        },
+        "qualification"
+    ],
+    [
+        5,
+        {
+            "team1ID": 4414,
+            "team1_alliance": "blue",
+            "team1_scoring_In_Auto": 6,
+            "team1_quality_of_auto": 5,
+            "team1_quality_of_scoring": 5,
+            "team1_overall_scoring": 15,
+            "team1_quality_of_defense": 2
+        },
+        {
+            "team2ID": 118,
+            "team2_alliance": "blue",
+            "team2_scoring_In_Auto": 3,
+            "team2_quality_of_auto": 3,
+            "team2_quality_of_scoring": 3,
+            "team2_overall_scoring": 9,
+            "team2_quality_of_defense": 4
+        },
+        {
+            "team3ID": 148,
+            "team3_alliance": "blue",
+            "team3_scoring_In_Auto": 4,
+            "team3_quality_of_auto": 4,
+            "team3_quality_of_scoring": 4,
+            "team3_overall_scoring": 11,
+            "team3_quality_of_defense": 3
+        },
+        {
+            "team4ID": 1678,
+            "team4_alliance": "red",
+            "team4_scoring_In_Auto": 5,
+            "team4_quality_of_auto": 5,
+            "team4_quality_of_scoring": 4,
+            "team4_overall_scoring": 13,
+            "team4_quality_of_defense": 2
+        },
+        {
+            "team5ID": 1323,
+            "team5_alliance": "red",
+            "team5_scoring_In_Auto": 5,
+            "team5_quality_of_auto": 5,
+            "team5_quality_of_scoring": 5,
+            "team5_overall_scoring": 14,
+            "team5_quality_of_defense": 1
+        },
+        {
+            "team6ID": 254,
+            "team6_alliance": "red",
+            "team6_scoring_In_Auto": 6,
+            "team6_quality_of_auto": 5,
+            "team6_quality_of_scoring": 5,
+            "team6_overall_scoring": 16,
+            "team6_quality_of_defense": 2
+        },
+        "qualification"
+    ],
+    [
+        6,
+        {
+            "team1ID": 971,
+            "team1_alliance": "blue",
+            "team1_scoring_In_Auto": 4,
+            "team1_quality_of_auto": 4,
+            "team1_quality_of_scoring": 4,
+            "team1_overall_scoring": 11,
+            "team1_quality_of_defense": 4
+        },
+        {
+            "team2ID": 2910,
+            "team2_alliance": "blue",
+            "team2_scoring_In_Auto": 5,
+            "team2_quality_of_auto": 5,
+            "team2_quality_of_scoring": 4,
+            "team2_overall_scoring": 13,
+            "team2_quality_of_defense": 2
+        },
+        {
+            "team3ID": 254,
+            "team3_alliance": "blue",
+            "team3_scoring_In_Auto": 5,
+            "team3_quality_of_auto": 5,
+            "team3_quality_of_scoring": 5,
+            "team3_overall_scoring": 15,
+            "team3_quality_of_defense": 3
+        },
+        {
+            "team4ID": 4414,
+            "team4_alliance": "red",
+            "team4_scoring_In_Auto": 6,
+            "team4_quality_of_auto": 5,
+            "team4_quality_of_scoring": 5,
+            "team4_overall_scoring": 16,
+            "team4_quality_of_defense": 1
+        },
+        {
+            "team5ID": 118,
+            "team5_alliance": "red",
+            "team5_scoring_In_Auto": 2,
+            "team5_quality_of_auto": 3,
+            "team5_quality_of_scoring": 3,
+            "team5_overall_scoring": 7,
+            "team5_quality_of_defense": 5
+        },
+        {
+            "team6ID": 1678,
+            "team6_alliance": "red",
+            "team6_scoring_In_Auto": 4,
+            "team6_quality_of_auto": 4,
+            "team6_quality_of_scoring": 4,
+            "team6_overall_scoring": 12,
+            "team6_quality_of_defense": 2
+        },
+        "qualification"
+    ],
+    [
+        7,
+        {
+            "team1ID": 1323,
+            "team1_alliance": "blue",
+            "team1_scoring_In_Auto": 6,
+            "team1_quality_of_auto": 5,
+            "team1_quality_of_scoring": 5,
+            "team1_overall_scoring": 15,
+            "team1_quality_of_defense": 1
+        },
+        {
+            "team2ID": 148,
+            "team2_alliance": "blue",
+            "team2_scoring_In_Auto": 3,
+            "team2_quality_of_auto": 3,
+            "team2_quality_of_scoring": 4,
+            "team2_overall_scoring": 10,
+            "team2_quality_of_defense": 3
+        },
+        {
+            "team3ID": 971,
+            "team3_alliance": "blue",
+            "team3_scoring_In_Auto": 5,
+            "team3_quality_of_auto": 4,
+            "team3_quality_of_scoring": 4,
+            "team3_overall_scoring": 12,
+            "team3_quality_of_defense": 5
+        },
+        {
+            "team4ID": 2910,
+            "team4_alliance": "red",
+            "team4_scoring_In_Auto": 5,
+            "team4_quality_of_auto": 5,
+            "team4_quality_of_scoring": 5,
+            "team4_overall_scoring": 14,
+            "team4_quality_of_defense": 2
+        },
+        {
+            "team5ID": 4414,
+            "team5_alliance": "red",
+            "team5_scoring_In_Auto": 5,
+            "team5_quality_of_auto": 5,
+            "team5_quality_of_scoring": 4,
+            "team5_overall_scoring": 13,
+            "team5_quality_of_defense": 2
+        },
+        {
+            "team6ID": 118,
+            "team6_alliance": "red",
+            "team6_scoring_In_Auto": 3,
+            "team6_quality_of_auto": 4,
+            "team6_quality_of_scoring": 3,
+            "team6_overall_scoring": 8,
+            "team6_quality_of_defense": 4
+        },
+        "qualification"
+    ],
+    [
+        8,
+        {
+            "team1ID": 254,
+            "team1_alliance": "blue",
+            "team1_scoring_In_Auto": 6,
+            "team1_quality_of_auto": 5,
+            "team1_quality_of_scoring": 5,
+            "team1_overall_scoring": 16,
+            "team1_quality_of_defense": 2
+        },
+        {
+            "team2ID": 1678,
+            "team2_alliance": "blue",
+            "team2_scoring_In_Auto": 5,
+            "team2_quality_of_auto": 5,
+            "team2_quality_of_scoring": 4,
+            "team2_overall_scoring": 13,
+            "team2_quality_of_defense": 3
+        },
+        {
+            "team3ID": 4414,
+            "team3_alliance": "blue",
+            "team3_scoring_In_Auto": 5,
+            "team3_quality_of_auto": 4,
+            "team3_quality_of_scoring": 5,
+            "team3_overall_scoring": 14,
+            "team3_quality_of_defense": 1
+        },
+        {
+            "team4ID": 1323,
+            "team4_alliance": "red",
+            "team4_scoring_In_Auto": 6,
+            "team4_quality_of_auto": 5,
+            "team4_quality_of_scoring": 5,
+            "team4_overall_scoring": 15,
+            "team4_quality_of_defense": 2
+        },
+        {
+            "team5ID": 2910,
+            "team5_alliance": "red",
+            "team5_scoring_In_Auto": 4,
+            "team5_quality_of_auto": 4,
+            "team5_quality_of_scoring": 4,
+            "team5_overall_scoring": 12,
+            "team5_quality_of_defense": 3
+        },
+        {
+            "team6ID": 148,
+            "team6_alliance": "red",
+            "team6_scoring_In_Auto": 3,
+            "team6_quality_of_auto": 4,
+            "team6_quality_of_scoring": 3,
+            "team6_overall_scoring": 9,
+            "team6_quality_of_defense": 4
+        },
+        "playoff"
+    ],
+    [
+        9,
+        {
+            "team1ID": 118,
+            "team1_alliance": "blue",
+            "team1_scoring_In_Auto": 4,
+            "team1_quality_of_auto": 3,
+            "team1_quality_of_scoring": 4,
+            "team1_overall_scoring": 10,
+            "team1_quality_of_defense": 4
+        },
+        {
+            "team2ID": 971,
+            "team2_alliance": "blue",
+            "team2_scoring_In_Auto": 3,
+            "team2_quality_of_auto": 4,
+            "team2_quality_of_scoring": 4,
+            "team2_overall_scoring": 11,
+            "team2_quality_of_defense": 5
+        },
+        {
+            "team3ID": 148,
+            "team3_alliance": "blue",
+            "team3_scoring_In_Auto": 4,
+            "team3_quality_of_auto": 4,
+            "team3_quality_of_scoring": 4,
+            "team3_overall_scoring": 12,
+            "team3_quality_of_defense": 3
+        },
+        {
+            "team4ID": 254,
+            "team4_alliance": "red",
+            "team4_scoring_In_Auto": 6,
+            "team4_quality_of_auto": 5,
+            "team4_quality_of_scoring": 5,
+            "team4_overall_scoring": 15,
+            "team4_quality_of_defense": 1
+        },
+        {
+            "team5ID": 1678,
+            "team5_alliance": "red",
+            "team5_scoring_In_Auto": 5,
+            "team5_quality_of_auto": 5,
+            "team5_quality_of_scoring": 5,
+            "team5_overall_scoring": 14,
+            "team5_quality_of_defense": 2
+        },
+        {
+            "team6ID": 4414,
+            "team6_alliance": "red",
+            "team6_scoring_In_Auto": 5,
+            "team6_quality_of_auto": 4,
+            "team6_quality_of_scoring": 5,
+            "team6_overall_scoring": 13,
+            "team6_quality_of_defense": 2
+        },
+        "playoff"
+    ],
+    [
+        10,
+        {
+            "team1ID": 1323,
+            "team1_alliance": "blue",
+            "team1_scoring_In_Auto": 5,
+            "team1_quality_of_auto": 5,
+            "team1_quality_of_scoring": 5,
+            "team1_overall_scoring": 14,
+            "team1_quality_of_defense": 2
+        },
+        {
+            "team2ID": 2910,
+            "team2_alliance": "blue",
+            "team2_scoring_In_Auto": 4,
+            "team2_quality_of_auto": 4,
+            "team2_quality_of_scoring": 4,
+            "team2_overall_scoring": 11,
+            "team2_quality_of_defense": 3
+        },
+        {
+            "team3ID": 1678,
+            "team3_alliance": "blue",
+            "team3_scoring_In_Auto": 6,
+            "team3_quality_of_auto": 5,
+            "team3_quality_of_scoring": 5,
+            "team3_overall_scoring": 16,
+            "team3_quality_of_defense": 1
+        },
+        {
+            "team4ID": 254,
+            "team4_alliance": "red",
+            "team4_scoring_In_Auto": 5,
+            "team4_quality_of_auto": 5,
+            "team4_quality_of_scoring": 5,
+            "team4_overall_scoring": 15,
+            "team4_quality_of_defense": 3
+        },
+        {
+            "team5ID": 4414,
+            "team5_alliance": "red",
+            "team5_scoring_In_Auto": 6,
+            "team5_quality_of_auto": 5,
+            "team5_quality_of_scoring": 4,
+            "team5_overall_scoring": 14,
+            "team5_quality_of_defense": 2
+        },
+        {
+            "team6ID": 971,
+            "team6_alliance": "red",
+            "team6_scoring_In_Auto": 4,
+            "team6_quality_of_auto": 4,
+            "team6_quality_of_scoring": 5,
+            "team6_overall_scoring": 12,
+            "team6_quality_of_defense": 4
+        },
+        "playoff"
     ]
 ]

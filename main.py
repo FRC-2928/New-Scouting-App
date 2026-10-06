@@ -25,6 +25,35 @@ style = {
     "textcolor": "#36362E"
 }
 
+def reset_and_show_page(page_name):
+    global settings_general_page, team_page, matches_page, help_page
+
+    if page_name == "Team":
+        team_page.destroy()
+        team_page = pages.build_team_page(body)
+        team_page.grid(row=0, column=0, sticky="nsew")
+        team_page.tkraise()
+        
+    elif page_name == "Match":
+        matches_page.destroy()
+        matches_page = pages.build_matches_page(body)
+        matches_page.grid(row=0, column=0, sticky="nsew")
+        matches_page.tkraise()
+        
+    elif page_name == "General":
+        settings_general_page.destroy()
+        settings_general_page = pages.build_general_settings_page(body)
+        settings_general_page.grid(row=0, column=0, sticky="nsew")
+        settings_general_page.tkraise()
+        
+    elif page_name == "Help":
+        help_page.destroy()
+        help_page = pages.build_help_page(body)
+        help_page.grid(row=0, column=0, sticky="nsew")
+        help_page.tkraise()
+
+
+
 def run_loading_screen(main_root, display_duration_ms=2500):
     main_root.withdraw() #hides the main window
 
@@ -208,7 +237,15 @@ def open_file_explorer():
         print(f"user selected {file_path}")
 
         with open(file_path, 'r') as file:
-            print(file.read())
+            content = file.read().strip()
+            if not content:
+                new_scouting_data = {}
+            else:
+                new_scouting_data = json.loads(content)
+
+        with open(os.path.join(script_dir, "current.json"), "w") as current_file:
+            json.dump(new_scouting_data, current_file, indent=4)
+        reset_and_show_page("Team")
 
 def create_new_file():
     if not data_management.import_default_json:
@@ -227,7 +264,7 @@ def save_new_file():
         
         # Open in 'w' (write) mode to physically create an empty file
         with open(file_path, 'w') as file:
-            file.write("") # Starts it off empty, ready for scouting data
+            json.dump({}, file)
 
 def save_file():
     data_management.savefile()
@@ -247,13 +284,13 @@ def show_help():
 
 show_team()
 view_label.callbacks = {
-    "Team": show_team,
-    "Match": show_matches
+    "Team": lambda: reset_and_show_page("Team"),
+    "Match": lambda: reset_and_show_page("Match")
 }
 
 settings_label.callbacks = {
-    "General": show_gen_settings,
-    "Help": show_help
+    "General": lambda: reset_and_show_page("General"),
+    "Help": lambda: reset_and_show_page("Help")
 }
 
 title_label.callback = {
@@ -265,5 +302,6 @@ title_label.callback = {
 
 run_loading_screen(root)
 
+reset_and_show_page("Team")
 
 root.mainloop()

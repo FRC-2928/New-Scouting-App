@@ -1,23 +1,38 @@
 import json
 from collections import defaultdict
-
+import os
 current_file_open = "none"
 
 def import_default_json():
-    with open("default.json", "r") as file:
-        default = json.load(file)
-        return default
-    
+    try:
+        with open("default.json", "r") as file:
+            default = json.load(file)
+            return default
+    except (FileNotFoundError, json.JSONDecodeError):
+        return []
+        
 def import_json_data(filename):
-    with open(filename, "r") as file:
-        data = json.load(file)
-        return data
+    try:
+        with open(filename, "r") as file:
+            data = json.load(file)
+            return data
+        return []
+    except json.JSONDecodeError:
+        return []
+def load_json_into_current(filename):
+    data1 = import_json_data(filename)
+    write_to_current(data1)
+    return data1
+    
     
 def clear_current():
     with open("current.json", "w") as file:
-        json.dump(import_default_json, file)
+        json.dump(import_default_json(), file)
 
-#def write_to_current():
+def write_to_current(filedata):
+    with open("current.json", "w") as file:
+        data = json.dump(filedata, file)
+        return data
 
 #def save_file_as():
 
@@ -32,10 +47,16 @@ def parse_and_average_json():
     Aggregates stats across all occurrences to calculate global averages per team.
     """
     try:
-        with open('none.json', 'r') as file:
-            raw_data = json.load(file)
-    except FileNotFoundError:
-        # Stand-in example layout matching your precise format definition
+        if os.path.exists('current.json') and os.path.getsize('current.json') > 0:
+            with open('current.json', 'r') as file:
+                raw_data = json.load(file)
+        else:
+            raw_data = []
+    except json.JSONDecodeError:
+        raw_data = []
+
+    # FIX: Fallback layout injection if dataset is entirely unpopulated or empty
+    if not raw_data:
         raw_data = [
             [254, 
              {"team1ID": 254, "team1_alliance": "blue", "team1_scoring_In_Auto": 4, "team1_quality_of_auto":5, "team1_quality_of_scoring": 5, "team1_overall_scoring": 12, "team1_quality_of_defense": 2},
@@ -47,7 +68,6 @@ def parse_and_average_json():
              "qualification" 
             ]
         ]
-
     # --- ADD THIS LOGIC TO FIX THE KEYERROR ---
     # Temporary storage to tally totals and matches played
     team_totals = defaultdict(lambda: {"auto": 0, "defense": 0, "scoring": 0, "count": 0})
@@ -73,10 +93,11 @@ def parse_and_average_json():
     processed_teams = {}
     for t_id, stats in team_totals.items():
         count = stats["count"]
-        processed_teams[t_id] = {
-            "avg_auto": round(stats["auto"] / count, 2),
-            "avg_defense": round(stats["defense"] / count, 2),
-            "avg_scoring": round(stats["scoring"] / count, 2)
-        }
+        if count > 0: # Division by zero safety check
+            processed_teams[t_id] = {
+                "avg_auto": round(stats["auto"] / count, 2),
+                "avg_defense": round(stats["defense"] / count, 2),
+                "avg_scoring": round(stats["scoring"] / count, 2)
+            }
         
     return processed_teams
