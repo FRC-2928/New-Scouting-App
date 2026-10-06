@@ -1,0 +1,11 @@
+[
+    [0, 
+    {"team1ID": 0, "team1_alliance": "blue", "team1_scoring_In_Auto": 0, "team1_quality_of_auto":0, "team1_quality_of_scoring": 0, "team1_overall_scoring": 0, "team1_quality_of_defense": 0},
+    {"team2ID": 0, "team2_alliance": "blue", "team2_scoring_In_Auto": 0, "team2_quality_of_auto":0, "team2_quality_of_scoring": 0, "team2_overall_scoring": 0, "team2_quality_of_defense": 0},
+    {"team3ID": 0, "team3_alliance": "blue", "team3_scoring_In_Auto": 0, "team3_quality_of_auto":0, "team3_quality_of_scoring": 0, "team3_overall_scoring": 0, "team3_quality_of_defense": 0},
+    {"team4ID": 0, "team4_alliance": "blue", "team4_scoring_In_Auto": 0, "team4_quality_of_auto":0, "team4_quality_of_scoring": 0, "team4_overall_scoring": 0, "team4_quality_of_defense": 0},
+    {"team5ID": 0, "team5_alliance": "blue", "team5_scoring_In_Auto": 0, "team5_quality_of_auto":0, "team5_quality_of_scoring": 0, "team5_overall_scoring": 0, "team5_quality_of_defense": 0},
+    {"team6ID": 0, "team6_alliance": "blue", "team6_scoring_In_Auto": 0, "team6_quality_of_auto":0, "team6_quality_of_scoring": 0, "team6_overall_scoring": 0, "team6_quality_of_defense": 0},
+    "practice" 
+    ]
+]
